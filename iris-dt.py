@@ -1,6 +1,9 @@
 import mlflow
+import dagshub
+dagshub.init(repo_owner='shivamtiwari83032-collab', repo_name='mlfow_dagshub-demoo', mlflow=True)
+
 from sklearn.ensemble import RandomForestClassifier
-mlflow.set_tracking_uri("http://127.0.0.1:5000")
+mlflow.set_tracking_uri("https://dagshub.com/shivamtiwari83032-collab/mlfow_dagshub-demoo.mlflowp")
 import mlflow.sklearn
 from sklearn.datasets import load_iris
 from sklearn.tree import DecisionTreeClassifier
@@ -8,6 +11,10 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, confusion_matrix
 import matplotlib.pyplot as plt
 import seaborn as sns
+
+import dagshub
+dagshub.init(repo_owner='shivamtiwari83032-collab', repo_name='mlfow_dagshub-demoo', mlflow=True)
+
 
 
 # Load the Iris dataset
